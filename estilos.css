@@ -1,7 +1,7 @@
 body {
     font-family: Tahoma, sans-serif;
     background-color: #f6f8fc;
-    color: #2f2e2e;
+    color: #030303;
 }
 .container {
     display: flex; 
@@ -10,6 +10,21 @@ body {
     flex-wrap: wrap;
 }
 
+.container-1 {
+    display: flex; 
+}
+
+.image {
+    width: 320px; 
+    height: 600px; 
+    border-radius: 5%; 
+    margin-right: 50px; 
+}
+
+.info {
+    flex: 1; 
+    margin-bottom: 20px;
+}
 
 .table-container {
     margin: 20px;
@@ -68,7 +83,7 @@ body {
   cursor: pointer;
   display: inline-flex;
   fill: currentcolor;
-  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-family: Tahoma, sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 48px;
