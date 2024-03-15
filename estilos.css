@@ -1,0 +1,12 @@
+body {
+    font-family: Tahoma, sans-serif;
+    background-color: #f6f8fc;
+    color: #2f2e2e;
+}
+.table-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f7f7f7;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

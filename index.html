@@ -4,80 +4,90 @@
     <meta charsee = "UTF-8">
     <link rel = "stylesheet" href = "estilos.css">
     <title> Personal Page </title>
-    <style>
-        .table {
-          background-color: rgb(254, 243, 241);
-          color: rgb(0, 0, 0);
-          margin: 20px;
-          padding: 20px;
-          
-        }
-        </style>
   </head>
   <body>
     <main>
         <div class = "container">
             <h1>
-                Welcome to my personal page
+                Welcome to my personal page!
             </h1>
         </div>
-        <div>
+        <div id = "me photo">
+          <img src = "me.jpeg"
+          alt = "This is a picture of me"
+          height = "600">
+        </div>
+        <div class = "info ">
             <h2>Josefa Olguin Parada</h2>
             <ul>
-                <li>Major in Computer Science</li>
+                <li>Major in  Computer Science</li>
                 <li>2019</li>
             </ul>
-            <p>
-                I am a computer science student at the Universidad de los Andes. I am passionate about programming and I am always looking for new challenges. I am currently looking for an internship to apply my knowledge and continue learning.
-            </p>
+            <div class = "summary">
+                <p>
+                  Hello! I'm excited to share a bit about myself with you.
+                  <br>
+                  Diving into the pages of a good book is one of my favorite activities to relax and learn something new. But I don't just limit myself to reading; I also enjoy immersing myself in the world of cinema. Exploring different film genres and getting lost in captivating stories is one of the things I enjoy most in my free time.
+                  
+                  Music is another one of my passions. My favorite band, without a doubt, is Radiohead. The depth of their lyrics and the complexity of their music have always inspired and accompanied me in different moments of my life.
+                  
+                  But not everything is tranquility and contemplation. I'm also a sports enthusiast. Whether it's running on natural trails or playing tennis to keep the mind and body in balance.
+                  
+                  And then there's my big dream: to travel the world. I dream of exploring new places, immersing myself in different cultures, and meeting fascinating people. Each destination is an opportunity to learn something new and enrich my perspective of the world around us.
+                  
+                  As for my furry companions, I have an adorable dog named Nala. She's more than a pet; she's my loyal companion, who fills my life with joy and unconditional love.
+                  <br>
+                  <br>
+                  Additionally, I have a passion for programming. You can check out my GitHub by clicking the button below.
+                </p>
+            </div>
+            <div class="button to">
+              <button onclick="window.open('https://github.com/joolguin/joolguin.github.io', '_blank')">Check My GitHub!</button>        </div>
+            </div>
         </div>
+        <h3>
+            My Skills
+        </h3>
         <div class="table">
-            <table>
-                <thead>
-                    <tr>
-                    <td scope="row">Skill</td>
-                    <td>Level</td>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Python</td>
-                        <td>10</td>
-                    </tr>
-                    <tr>
-                        <td>C++</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>C+</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <td>HTML</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Java Script</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Excel</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Spanish</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>English</td>
-                        <td>5</td>
-                    </tr>
-                    <tr>
-                        <td>Spanish</td>
-                        <td>5</td>
-                    </tr>
-                </tbody>
-            </table>
+            <table border="1">
+                <tr>
+                  <th width = 200>Skill</th>
+                  <th width = 200>Level</th>
+                </tr>
+                <tr>
+                  <td>Python</td>
+                  <td>Advance</td>
+                </tr>
+                <tr>
+                  <td>C++</td>
+                  <td>Advance</td>
+                </tr>
+                <tr>
+                  <td>C</td>
+                  <td>Basic</td>
+                </tr>
+                <tr>
+                  <td>Excel</td>
+                  <td>Advance</td>
+                </tr>
+                <tr>
+                  <td>Git</td>
+                  <td>Advance</td>
+                </tr>
+                <tr>
+                  <td>HTML/CSS</td>
+                  <td>Basic</td>
+                </tr>
+                <tr>
+                  <td>English</td>
+                  <td>Advance</td>
+                </tr>
+                <tr>
+                  <td>Spanish</td>
+                  <td>Native</td>
+                </tr>
+              </table>
+            
         </div>
     </main>
   </body>
