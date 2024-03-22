@@ -21,21 +21,35 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Inicializa el IntersectionObserver
   let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
+      // Verifica si el elemento está en el campo de visión
       if (entry.isIntersecting) {
+        // Anima las barras de progreso que son hijos del elemento intersectado
         entry.target.querySelectorAll('.progress-bar').forEach(bar => {
           let percentage = bar.getAttribute('data-percentage');
-          bar.style.transition = 'width 2s ease-in-out'; // Hace la animación más lenta
-          bar.style.width = percentage + '%';
+          bar.style.transition = 'width 2s ease-in-out'; // Controla la velocidad de la animación
+          bar.style.width = percentage + '%'; // Ajusta el ancho basado en el atributo data-percentage
         });
       }
     });
-  }, {threshold: 0.6}); // Ajusta según cuándo quieras que comience la animación
+  }, { threshold: 0.6 }); // Determina cuánto del elemento debe estar visible para activar el observador
 
-  // Observa la sección de habilidades
+  // Observa la sección de habilidades para aplicar animaciones
   observer.observe(document.querySelector('.skills-section'));
+
+  // Eventos de toque: Estos son esqueletos para eventos de toque. 
+  // Puedes añadir interacciones específicas aquí si es necesario.
+  document.addEventListener('touchstart', function(e) {
+    // Implementa acciones específicas para touchstart si es necesario
+  });
+
+  document.addEventListener('touchmove', function(e) {
+    // Implementa acciones específicas para touchmove si es necesario
+  });
 });
+
 
 
 
