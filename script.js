@@ -2,7 +2,7 @@ document.addEventListener('DOMContentLoaded', function() {
   var heroTitleText = "Hi, I'm Josefa Olguin";
   var heroSubtitleText = "I'm a student of Civil Engineering in Computer Science, and you've landed on my personal webpage.";
   var heroWelcomeText = "Welcome!";
-  var speed = 90; 
+  var speed = 70; 
 
   function typeWriter(text, elementId, i) {
       if (i < text.length) {
