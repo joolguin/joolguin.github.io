@@ -1,0 +1,139 @@
+/*General Styles*/
+body {
+  font-family: 'Noto Sans Khojki', sans-serif;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.navbar {
+  background-color: #294122; 
+}
+
+.navbar .bi-github {
+  color: #FFEDD2; /
+}
+.navbar .bi-envelope {
+  color: #FFEDD2; 
+}
+/*Hero Section*/
+.hero {
+    background-color: #294122;
+    color: #FFEDD2;
+    text-align: center;
+    padding: 100px 0;
+    min-height: 700px;
+
+}
+
+.main-hero h1{
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+.main-hero h3{
+  padding-top: 20px;
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+.main-hero h4{
+  padding-right: 100px;
+  padding-left: 100px;
+}
+
+
+/*About me section*/
+.about-me{
+  background-color: #FFEDD2;
+  text-align: center;
+  padding: 200px 0;
+  min-height: 700px
+}
+
+.overlay {
+  position: relative; 
+  text-align: left; 
+  color: #294122;
+  padding: 20px; 
+}
+
+.overlay h1 {
+  font-size: 3rem;
+  margin-bottom: 20px; 
+}
+
+.carousel-item img {
+  width: 100%; 
+  height: 600px; 
+  object-fit: cover; 
+}
+
+
+/*Skills section*/
+.skills-section{
+  background-color: #294122;
+  color: #FFEDD2;
+  text-align: center;
+  padding: 200px 0;
+  min-height: 700px;
+}
+
+.skills-section h2{
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: #FFEDD2;
+  padding-bottom: 50px;
+}
+.text-custom{
+  color:#FFEDD2
+}
+
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+.table{
+  width: 100%;
+  margin: auto;
+}
+.table thead th, .table tbody td{
+  color: #FFEDD2;
+  font-size: 1.2rem;
+  background-color: #294122;
+}
+
+table.table-bordered{
+    border:1px solid #FFEDD2;
+    margin-top:20px;
+  }
+table.table-bordered > thead > tr > th{
+    border:5px solid #FFEDD2;
+}
+table.table-bordered > tbody > tr > td{
+    border:1px solid #FFEDD2;
+}
+
+/*Change Section*/
+.change-color-section{
+  background-color: #FFEDD2;
+  color: #294122;
+  text-align: center;
+  padding: 100px;
+  min-height: 300px;
+  
+}
+
+#heartIcon{
+  font-size: 60px;
+}
+
+
+
+
+
