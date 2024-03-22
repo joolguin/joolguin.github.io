@@ -19,6 +19,26 @@ document.addEventListener('DOMContentLoaded', function() {
   setTimeout(function() { typeWriter(heroWelcomeText, "heroWelcome", 0); }, (heroTitleText.length + heroSubtitleText.length) * speed);
 });
 
+
+document.addEventListener('DOMContentLoaded', () => {
+  let observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('.progress-bar').forEach(bar => {
+          let percentage = bar.getAttribute('data-percentage');
+          bar.style.transition = 'width 2s ease-in-out'; // Hace la animación más lenta
+          bar.style.width = percentage + '%';
+        });
+      }
+    });
+  }, {threshold: 0.6}); // Ajusta según cuándo quieras que comience la animación
+
+  // Observa la sección de habilidades
+  observer.observe(document.querySelector('.skills-section'));
+});
+
+
+
 function changeBackgroundColor() {
   var colorInput = document.getElementById("colorInput").value;
   var heartIcon = document.getElementById("heartIcon");

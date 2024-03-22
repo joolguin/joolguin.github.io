@@ -91,33 +91,11 @@ section {
 .text-custom{
   color:#FFEDD2
 }
-
-.table-responsive {
-  max-width: 100%;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
-  -ms-overflow-style: -ms-autohiding-scrollbar;
-}
-.table{
-  width: 100%;
-  margin: auto;
-}
-.table thead th, .table tbody td{
-  color: #FFEDD2;
-  font-size: 1.2rem;
-  background-color: #294122;
+.bg-custom {
+  background-color: #e76738 !important; /* Cambia el color según prefieras */
 }
 
-table.table-bordered{
-    border:1px solid #FFEDD2;
-    margin-top:20px;
-  }
-table.table-bordered > thead > tr > th{
-    border:5px solid #FFEDD2;
-}
-table.table-bordered > tbody > tr > td{
-    border:1px solid #FFEDD2;
-}
+
 
 /*Change Section*/
 .change-color-section{
